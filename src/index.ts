@@ -79,8 +79,5 @@ app.get('/get-detail', (req: Request, res: Response) => {
 
 })
 
-const port = parseInt(process.env.PORT || '3000', 10);
-
-app.listen(port, process.env.HOST || '0.0.0.0', () => {
-    console.log(`Server is running on ${process.env.HOST || '0.0.0.0'}:${port}`);
-});
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
